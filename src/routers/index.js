@@ -10,7 +10,7 @@ import {
 import Login from '@/pages/loginPage'
 import homePage from '@/pages/homePage'
 
-const BasicRoute = () => {
+const BasicRouters = () => {
   return (
       <Switch>
         <Route exact path='/' component={homePage} />
@@ -19,4 +19,4 @@ const BasicRoute = () => {
   )
 }
 
-export default BasicRoute;
+export default BasicRouters;
