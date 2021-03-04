@@ -1,0 +1,402 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: #F0F0F0 !important;
+}
+ ul{
+    list-style: none;
+    margin:0 !important; 
+    padding: 0;
+ }
+
+ a{color: #000 !important;}
+ i {
+    font-style: normal;
+}
+.head-search .head-title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #008cff;
+}
+.head-Tabs ,.head-search{
+    background-color: #fff;
+}
+.head-Tabs .ant-tabs-nav-wrap{
+    padding-left: 32px;
+}
+.head-Tabs .ant-tabs-top > .ant-tabs-nav{
+    margin:0 0 5px 0;
+}
+.head-Tabs  .ant-tabs-top > .ant-tabs-nav::before{
+    border-bottom:none;
+}
+
+.head-Tabs .slick-track{
+    font-size: 0;
+}
+
+/* Tabs内容背景 */
+.head-Tabs .ant-tabs-content-holder{
+    background: #F0F0F0 !important;
+}
+.index-hot-tip ul {
+    font-size: 12px;
+    color: #999;
+    padding:.5rem .6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.index-hot-tip ul li{
+    display: inline-block;
+}
+.index-hot-tip ul li img{
+    width: 16px;
+    vertical-align: middle;
+    padding-bottom: .15rem;
+    padding-right: .2rem;
+}
+.index-hot-site{ 
+    background-color: #fff;
+    margin-bottom: .6rem;
+}
+.index-hot-site ul{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5% 3%;
+}
+
+.index-hot-site ul li img{
+    display: block;
+    width: 14vw;
+    height: 14vw;
+}
+
+.index-banner{
+    display: flex;
+}
+
+.index-banner .row{
+    width: 50%;
+}
+.index-banner .row img{
+    width: 100%;
+}
+
+.section-phone-box .section-title h3{
+    position: relative;
+    padding: 2rem 0 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.section-phone-box .section-title h3:after{
+    content: "";
+    position: absolute;
+    width: 1.6rem;
+    height: .14rem;
+    background-color: #008cff;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0.3rem;
+}
+
+.phone-list {
+    display: flex;
+    flex-wrap: wrap; /*让弹性盒元素在必要的时候拆行：*/
+    text-align: center;
+    justify-content: space-between;
+}
+
+.phone-list .phone-content{
+    width: 49.2%; 
+    background-color: #fff;
+    position: relative;
+    padding-top: 1rem;
+    margin-top: .4rem;
+}
+.phone-list .phone-content img{
+    width: 10.85rem;
+}
+.phone-list .phone-content .phone-info{
+    text-align: center;
+}
+
+.phone-list .phone-content .phone-info{
+    text-align: center;
+}
+.phone-list .phone-content .phone-info p {
+    margin-bottom: .5em;
+}
+.phone-list .phone-content .phone-info .phone-slogan {
+    overflow: hidden;
+    text-overflow: ellipsis; /*当对象内文本溢出时显示省略标记（...）*/
+    white-space:nowrap; /*文本不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止 */
+    margin: 0 1rem;
+    color: #999;
+}
+
+.phone-list .phone-content .phone-info .phone-slogan span{
+    font-size:.8rem;
+}
+
+.phone-content .phone-info .phone-products-name{
+    padding-top: .6rem;
+    font-size: .95rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    padding: 0 1rem;
+}
+
+.phone-content .phone-info  .phone-price{
+    color: red;
+    font-size: 1rem;
+}
+
+.phone-content .phone-info .phone-price i {
+    font-style: normal;
+    font-size: .1rem;
+}
+
+.list-ad .ad{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 43.88889%;
+}
+.list-ad .ad img{
+    width: 50%;
+}
+.list-ad .info{
+    padding:1rem;
+}
+
+.list-ad .info h4{
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.list-ad .info .label{
+    position: relative;
+    font-size: .85rem;
+    color: #ffffffb3;
+}
+.list-ad .info .label:after{
+    position: absolute;
+    content: '';
+    width: 1.3rem;
+    height: .12rem;
+    background: #fff;
+    left: 0;
+    bottom: -.3rem;
+}
+
+.list-ad .info .price{
+    font-size: 1.2rem;
+    color: #ffffffb3;
+}
+.list-ad .info h4 { margin: 0;}
+.list-ad .info p{
+    margin-bottom:0rem 
+}
+
+.index-back-center div{
+    text-align: center;
+    padding: 1rem;
+    color: #999;
+    font-size: 1rem;
+}
+
+.footer{
+    padding: 1.5rem 1rem;
+    background: #fff;
+}
+
+.footer .footer-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.footer .footer-btns button{
+    width: 47%;
+    /* height:2.5rem; */
+}
+.footer .footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-right: 1rem;
+}
+.footer .footer-copy{
+    font-size: 10px;
+    color: #999;
+}
+.lang-choose-container{
+    width: 5rem;
+}
+
+.lang-choose-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+}
+.lang-choose-list {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid hsla(0,0%,100%,0);
+}
+
+.lang-choose-item {
+    text-align: left;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    padding: 0 5px;
+}
+.lang-choose-item:last-child {
+    display: block;
+    border: none;
+}
+.lang-choose-list-active .lang-choose-item:last-child {
+    background-color: #f6f6f6;
+    border: none;
+}
+.lang-choose-item .lang-title{
+    position: relative;
+    z-index: 1;
+}
+
+.lang-choose-wrapper-active{
+    overflow: visible;
+}
+.lang-choose-item:last-child .icon-more {
+    visibility: visible;
+}
+.lang-choose-item .lang-title .icon-more {
+    position: absolute;
+    /* visibility: hidden; */
+    bottom: 4px;
+    right: -22px;;
+    border-width: 6px;
+    border-style: solid;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #cfcfcf;
+    z-index: 2;
+}
+
+.comment-list{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.comment-list .comment-content{
+    margin-top: .4rem;
+    width: 49.2%; 
+    background-color: #fff;
+}
+.comment-list .comment-content p{
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+}
+
+.comment-list .comment-content .comment-info{
+    padding: 0.3rem 0.8rem;;
+}
+
+.comment-info img{
+    width: 1.3rem;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.comment-info .comment-tip{
+    font-size: 10px;
+    color: #999;
+}
+
+.comment-info .comment-dsc{
+    overflow: hidden; 
+    text-overflow: ellipsis; /*显示省略符号来代表被修剪的文本。*/
+    display: -webkit-box; /*必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
+    -webkit-box-orient: vertical; /*必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+    -webkit-line-clamp:2 ; /*-webkit-line-clamp用来限制在一个块元素显示的文本的行数。 为了实现该效果，它需要组合其他的WebKit属性。常见结合属性*/
+}
+
+.other-footer .footer-swiper-list{
+    overflow-x: scroll;  /*左右可滑动*/
+    overflow-y: hidden;
+    white-space: nowrap; /*文本不会换行，文本会在在同一行上继续*/
+    margin-bottom: .4rem;
+}
+
+/* 滚动条，电脑端显示，手机端隐藏 */
+@media (max-width: 768px) {
+    .other-footer .footer-swiper-list::-webkit-scrollbar {
+        display: none; /* Chrome Safari 手机端隐藏元素滚动条*/
+    }
+    .other-footer .footer-swiper-list{
+        scrollbar-width: none; /* Firefox 手机端隐藏元素滚动条*/
+        -ms-overflow-style: none; /* IE 10+ 手机端隐藏元素滚动条*/
+    }
+}
+
+.other-footer .footer-swiper-list img {
+    background: #fff;
+    width: 8rem;
+}
+.other-footer .footer-swiper-list .swiper-li {
+    width: 43%;
+    margin-right: 5px;
+    background: #fff;
+    display: inline-block;/*行内块元素*/
+    text-align: center;
+    padding: .3rem 0;
+}
+.other-footer .footer-swiper-list .swiper-li-notmargin{
+    margin:0;
+}
+
+.other-footer .footer-swiper-list .swiper-li .info{
+    padding-top: .1rem ;
+}
+
+.other-footer .footer-swiper-list .swiper-li .info p{
+    padding: .1rem;
+    margin: 0;
+}
+
+.other-footer .footer-swiper-list .swiper-li .info .name{
+    font-size: 1rem;
+}
+.other-footer .footer-swiper-list .swiper-li .info .price{
+    font-size: .99em;
+    color: red;
+}
+
+.other-footer .footer-service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem .5rem 0 .5rem;
+    background: #fff;
+}
+.other-footer .footer-service img{
+    width: 16vw;
+}
