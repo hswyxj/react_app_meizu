@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 import './login.css'
 import { store } from '@/store';
+import { login } from '@/api/login/index.js'
 
-import { Button, Input, Select,Checkbox  } from 'antd'
+import { Button, Input, Select, Checkbox } from 'antd'
 const { Option } = Select;
 
 class LoginPage extends Component {
@@ -15,9 +16,13 @@ class LoginPage extends Component {
   handleClick(index) {
     console.log(index);
     this.setState({ loginTip: index })
-    console.log(store.dispatch({ type: 'ADD_CHAT',payload:'123' }));
-console.log(store.getState());
-
+    // console.log(store.dispatch({ type: 'ADD_CHAT',payload:'123' }));
+    console.log(store.getState());
+  }
+  handleLogin(){
+    login({username:'admin',password:'123123'}).then(res => {
+      console.log(res);
+    })
   }
   render() {
     const loginTip = this.state.loginTip
@@ -34,16 +39,16 @@ console.log(store.getState());
 
     const userlogin = (
       <div className='userlogin'>
-        <Input className='userlogin-input'  placeholder="手机号/ Flyme 账号" size='large'/>
-        <Input className='userlogin-input' placeholder="密码" size='large'/>
+        <Input className='userlogin-input' placeholder="手机号/ Flyme 账号" size='large' />
+        <Input className='userlogin-input' placeholder="密码" size='large' />
         <div className='login-tip'>
-        <Checkbox onChange={() => this.onChange}>记住登录状态</Checkbox>
-        <Button  type="text">忘记密码?</Button>
+          <Checkbox onChange={() => this.onChange}>记住登录状态</Checkbox>
+          <Button type="text">忘记密码?</Button>
         </div>
       </div>
     )
 
-    const loginItem = loginTip === 1?userlogin:phonelogin
+    const loginItem = loginTip === 1 ? userlogin : phonelogin
     return (
       <div className={loginTip === 1 ? 'content-h' : 'content'}>
         <div className='tab-title'>
@@ -52,7 +57,7 @@ console.log(store.getState());
           <h3 className={loginTip === 1 ? 'phone-login color-dark' : 'phone-login'} onClick={() => this.handleClick(2)}>验证码登录</h3>
         </div>
         {loginItem}
-        <Button className='login-button' type="primary" size='large'>登录</Button>
+        <Button className='login-button' type="primary" size='large' onClick={() => this.handleLogin()}>登录</Button>
         <Button className='register-button' type="text">注册</Button>
       </div>
     );

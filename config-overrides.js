@@ -16,7 +16,7 @@ function resolve(dir) {
 }
 
 const addCustomize = () => config => {
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'development') {
     // 关闭sourceMap
     config.devtool = false;
     // 配置打包后的文件位置
@@ -38,14 +38,17 @@ const devServerConfig = () => config => {
     ...config,
     port: port,
     proxy: {
-      '/api': {
-        target: 'xxx',
+      // change xxx-api/login => mock/login
+      [process.env.REACT_APP_BASE_API]: {
+        // target: `http://localhost:${port}/mock`, // mock
+        target: 'http://www.api.com', //api url
         changeOrigin: true,
         pathRewrite: {
-          '^/api': '/api',
+          ['^' + process.env.REACT_APP_BASE_API]: ''
         },
       }
-    }
+    },
+    // after: require('./mock/mock-server.js')
   }
 }
 

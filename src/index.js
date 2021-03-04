@@ -8,12 +8,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-
-// 路由使用 history模式
-// import { BrowserRouter } from 'react-router-dom';
-// 路由采用 hash模式
-// import { HashRouter } from 'react-router-dom'
-
 import 'antd/dist/antd.css'; //引入antd样式
 
 import getPageTitle from '@/utils/getpagetitle'

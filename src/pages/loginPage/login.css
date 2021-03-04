@@ -35,14 +35,16 @@
     width: 88%;
     height: 2.8rem;
     font-size: 14px;
-    margin-left: 50%;
+    left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
 }
 
 .content .register-button,
 .content-h .register-button{
-    margin-left: 50%;
+    left: 50%;
     transform: translateX(-50%);
+    overflow: hidden;
 }
 
 
