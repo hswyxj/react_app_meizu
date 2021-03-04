@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
     "antd": "^4.13.0",
-    "compression-webpack-plugin": "^7.1.2",
     "customize-cra": "^1.0.0",
     "react": "^17.0.1",
     "react-app-rewired": "^2.1.8",
@@ -44,6 +43,7 @@
   },
   "devDependencies": {
     "babel-plugin-import": "^1.13.3",
+    "compression-webpack-plugin": "^6.1.1",
     "redux-devtools": "^3.7.0"
   }
 }

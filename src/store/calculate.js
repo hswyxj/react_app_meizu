@@ -18,5 +18,4 @@ const chatReducer = (state = {}, action) => {
     }
 }
 
-
 export { chatReducer }
