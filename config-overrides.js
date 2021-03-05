@@ -16,17 +16,20 @@ function resolve(dir) {
 }
 
 const addCustomize = () => config => {
-  if (process.env.NODE_ENV === 'development') {
+  if (process.env.NODE_ENV === 'production') {
     // 关闭sourceMap
     config.devtool = false;
     // 配置打包后的文件位置
-    // config.output.path = resolve('dist');
-    // config.output.publicPath = './';
+    config.output.path = resolve('docs');
+    config.output.publicPath = '/';
+    const paths = require('react-scripts/config/paths');
+    paths.appBuild = path.join(path.dirname(paths.appBuild), 'docs');
+
     // 添加js打包gzip配置
     config.plugins.push(
       new CompressionWebpackPlugin({
         test: /\.js$|\.css$/,
-        threshold: 1024,
+        threshold: 1024, //对10K以上的数据进行压缩
       }),
     )
   }
